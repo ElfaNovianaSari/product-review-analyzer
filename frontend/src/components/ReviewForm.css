@@ -1,0 +1,99 @@
+.review-form-container {
+  background: linear-gradient(135deg, rgba(255, 245, 250, 0.9), rgba(255, 231, 243, 0.92));
+  color: #2b2b2b;
+  padding: 26px;
+  border-radius: 20px;
+  box-shadow: 0 22px 50px rgba(225, 29, 116, 0.14);
+  border: 1px solid rgba(225, 29, 116, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.review-form-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 182, 224, 0.18), transparent 40%),
+              radial-gradient(circle at 80% 0%, rgba(255, 214, 239, 0.2), transparent 45%);
+  pointer-events: none;
+}
+
+.review-form-container h2 {
+  margin-bottom: 6px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #c2185b;
+  letter-spacing: -0.01em;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 700;
+  color: #b31353;
+}
+
+.form-group input,
+.form-group textarea {
+  background: #ffffff;
+  border: 1px solid rgba(225, 29, 116, 0.2);
+  color: #2b2b2b;
+  padding: 12px 14px;
+  border-radius: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e41e63;
+  box-shadow: 0 6px 20px rgba(225, 29, 116, 0.14);
+  transform: translateY(-1px);
+}
+
+.form-group small {
+  color: #9f9fab;
+}
+
+.error-message {
+  background: #fff1f3;
+  color: #9f1239;
+  border: 1px solid rgba(255, 71, 133, 0.25);
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #ff7ab8, #e11d74);
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.22s ease;
+  text-transform: uppercase;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit-btn:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(225, 29, 116, 0.26);
+}
