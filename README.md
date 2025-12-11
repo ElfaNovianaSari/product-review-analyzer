@@ -1,8 +1,6 @@
-# Product Review Analyzer 🚀
+# Product Review Analyzer 
 
-**Tugas Individu 3 - Pemrograman Web Lanjut**
-
-## 👤 Author
+**Tugas Individu 3 - PAW**
 
 **Nama**: Elfa Noviana Sari 
 
